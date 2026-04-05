@@ -1,18 +1,16 @@
 # Claude Code Game Studios -- Game Studio Agent Architecture
 
-Indie game development managed through 48 coordinated Claude Code subagents.
-Each agent owns a specific domain, enforcing separation of concerns and quality.
+Solo indie game development with Unreal Engine 5 (C++).
+11 active agents cover the full solo dev workflow. Additional agents and skills
+are available in `ondemand/` and can be copied back to `.claude/` as needed.
 
 ## Technology Stack
 
-- **Engine**: [CHOOSE: Godot 4 / Unity / Unreal Engine 5]
-- **Language**: [CHOOSE: GDScript / C# / C++ / Blueprint]
+- **Engine**: Unreal Engine 5
+- **Language**: C++ (primary), Blueprint (glue/prototyping)
 - **Version Control**: Git with trunk-based development
-- **Build System**: [SPECIFY after choosing engine]
-- **Asset Pipeline**: [SPECIFY after choosing engine]
-
-> **Note**: Engine-specialist agents exist for Godot, Unity, and Unreal with
-> dedicated sub-specialists. Use the set matching your engine.
+- **Build System**: Unreal Build Tool (UBT)
+- **Asset Pipeline**: Unreal Editor asset system
 
 ## Project Structure
 
@@ -20,7 +18,7 @@ Each agent owns a specific domain, enforcing separation of concerns and quality.
 
 ## Engine Version Reference
 
-@docs/engine-reference/godot/VERSION.md
+@docs/engine-reference/unreal/VERSION.md
 
 ## Technical Preferences
 
